@@ -20,7 +20,8 @@
 
 
 //Default Value for Diplay part
-display = document.querySelector('.display').value;
+let display = document.querySelector('.display').value;
+let ans  = 0;
 
 
 document.querySelector("#btn0").onclick = btn0;
@@ -83,9 +84,50 @@ val9 = document.querySelector('#btn9').value;
 display = document.querySelector('.display').innerHTML += val9;
 }
 
+
+document.querySelector("#btnAdd").onclick = btnAdd;
+function btnAdd(){
+valAdd = document.querySelector('#btnAdd').value;
+display = document.querySelector('.display').innerHTML += valAdd;
+}
+
+
+document.querySelector("#btnMinus").onclick = btnMinus;
+function btnMinus(){
+valMinus = document.querySelector('#btnMinus').value;
+display = document.querySelector('.display').innerHTML += valMinus;
+}
+
+document.querySelector("#btnDot").onclick = btnDot;
+function btnDot(){
+valDot = document.querySelector('#btnDot').value;
+display = document.querySelector('.display').innerHTML += valDot;
+}
+
+
+document.querySelector("#btnDivide").onclick = btnDivide;
+function btnDivide(){
+valDivide = document.querySelector('#btnDivide').value;
+display = document.querySelector('.display').innerHTML += valDivide;
+}
+
+
+document.querySelector("#btnMod").onclick = btnMod;
+function btnMod(){
+valMod = document.querySelector('#btnMod').value;
+display = document.querySelector('.display').innerHTML += valMod;
+}
+
+document.querySelector("#btnX").onclick = btnX;
+function btnX(){
+valX = document.querySelector('#btnX').value;
+display = document.querySelector('.display').innerHTML += valX;
+}
+
 document.querySelector("#btnAC").onclick = btnAC;
 function btnAC(){
-    display = document.querySelector('.display').innerHTML = 0;
+    display = document.querySelector('.display').innerHTML = '';
+    document.querySelector('.DispAns').innerHTML = 0;
 }
 
 document.querySelector("#btnDel").onclick = btnDEL;
@@ -94,16 +136,32 @@ function btnDEL(){
 }
 
 
+document.querySelector("#btnEqual").onclick = btnEqual;
+function btnEqual(){
+    if( display === undefined || display === 0){
+        document.querySelector('.DispAns').innerHTML  = 0;
+    }else{
+        try{
+        ans = document.querySelector('.DispAns').innerHTML  = eval(display);
+        }
+        catch(err){
+            document.querySelector('.DispAns').innerHTML  = 'Math Error';
+        }
+    }
+    
+}
+
+
+document.querySelector("#btnAns").onclick = btnAns;
+function btnAns(){
+    if( display === undefined || display === 0){
+        display = document.querySelector('.display').innerHTML = 0;
+    }else{
+        display = document.querySelector('.display').innerHTML = ans;   
+    }
+}
 
 
 
 
-// btnX
-// btnDivide
-// btnAdd
-// btnMinus
-// btnDot
-// btnExp
-// btnAns
-// btnEqual
 
