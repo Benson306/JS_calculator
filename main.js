@@ -1,14 +1,3 @@
-// document.querySelector('#btn7').onclick = btn7;
-// function btn7(){
-//     val7 = document.querySelector('#btn7').value;
-//     document.querySelector('.display').innerHTML += val7;
-// }
-
-// document.querySelector('#btn8').onclick = btn8;
-// function btn8(){
-//     val8 = document.querySelector('#btn8').value;
-//     document.querySelector('.display').innerHTML += val8;
-// }
 // for(let i = 0; i < 10; i++){
 //     document.querySelector('.result').innerHTML += `
 //                 document.querySelector("#btn${i}").onclick = btn${i};<br>
