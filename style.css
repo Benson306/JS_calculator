@@ -1,0 +1,41 @@
+body{
+    background-color: darkgrey;
+}
+.frame{
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 5%;
+    border: 3px solid orange;
+    border-radius: 25px;
+    background-color: rgb(8, 7, 8);
+}
+.buttons{
+    display: block;
+    padding: 15px;
+}
+.row1, .row2, .row3, .row4{
+    display: flex;
+    padding: 10px;
+}
+.display{
+    background-color: cornsilk;
+    margin: 2%;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 0;
+    border-radius: 15px;
+    padding: 10px;
+    height: 80px;
+    text-align:right;
+}
+button{
+    padding:10px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    width: 15%;
+}
+#btnDel,#btnAC{
+    background-color: maroon;
+    border-color: maroon;
+    color: white;
+}
