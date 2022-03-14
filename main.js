@@ -15,8 +15,9 @@ let ans  = 0;
 
 document.querySelector("#btn0").onclick = btn0;
 function btn0(){
-val0 = document.querySelector('#btn0').value;
-    display = document.querySelector('.display').innerHTML += val0;
+    val0 = document.querySelector('#btn0').value;
+
+    display = document.querySelector('.display').innerHTML += val0;   
 }
 
 document.querySelector("#btn1").onclick = btn1;
